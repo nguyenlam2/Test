@@ -17,7 +17,7 @@ namespace SimpleSeleniumTest.Test
             loginPage = new LoginPage(browser.Driver);
             dashboardPage = new DashboardPage(browser.Driver);
         }
-
+        [TestCategory("smoketest")]
         [TestMethod("TC01: Verify login with valid username and password")]
         public void VerifyValidUser()
         {
